@@ -19,7 +19,7 @@ However, in scope of this task I've decided to keep only minimal necessary chang
 10. Field names (`W`, `H`) should start with lowercase letter (unless it is a constant)
 11. Replace `W`/`H` with `weight`/`height` (meaningful naming)
 12. `take`/`put` should be `get`/`set` (java naming convention)
-13. Make the class `immutable` (`final` class and properties, no setters or setters instantiate new object)
+13. Make the class `immutable` (`final` class and properties, no common setters; only setters that instantiate a new object are allowed)
 14. Extract BMI calculation logic to a separate method
 15. Use logical `&&` `||` instead of bitwise `&` `|` in conditional statements
 16. Add input validation -> `checkPositivityOf(values)`
@@ -39,4 +39,4 @@ as I understand from the context, we should calculate it not from the start, but
    -> from this perspective, I suggest using the mechanism of lazy initialization (init on demand)
 26. Define static factory method `HumanBmi.calculate()` to increase readability and make constructor private to make programmers use only the factory method
 27. Define `equals()`, `hashcode()`, `toString()` (java best practice)
-2Add unit-tests
+28. Add unit-tests
