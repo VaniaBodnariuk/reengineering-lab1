@@ -34,7 +34,7 @@ public class HumanBmiTest {
 		var bmi = HumanBmi.calculate(70, 1.75);
 		var bmiWithChangedHeight = bmi.setHeight(60);
 
-        assertNotSame(bmi, bmiWithChangedHeight);
+                assertNotSame(bmi, bmiWithChangedHeight);
 		assertEquals(60, bmiWithChangedHeight.getHeight());
 	}
 
