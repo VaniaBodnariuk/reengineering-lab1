@@ -102,6 +102,6 @@ public final class HumanBmi {
 	}
 
 	public enum Status {
-		UNDERWEIGHT, NORMAL, OBESE,	OVERWEIGHT;
+		UNDERWEIGHT, NORMAL, OBESE, OVERWEIGHT;
 	}
 }
